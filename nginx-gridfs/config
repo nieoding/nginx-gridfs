@@ -1,0 +1,7 @@
+ngx_module_type=HTTP
+ngx_module_name=ngx_http_gridfs_module
+ngx_module_incs="/usr/include/libmongoc-1.0 /usr/include/libbson-1.0"
+ngx_module_libs="-lmongoc-1.0 -lbson-1.0"
+ngx_module_srcs="$ngx_addon_dir/ngx_http_gridfs_module.c"
+. auto/module
+ngx_addon_name=$ngx_module_name
